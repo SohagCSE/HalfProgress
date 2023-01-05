@@ -1,0 +1,6 @@
+framework module HalfProgress {
+  umbrella header "HalfProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}

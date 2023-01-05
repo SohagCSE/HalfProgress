@@ -1,0 +1,22 @@
+{
+  "name": "HalfProgress",
+  "version": "0.1.0",
+  "summary": "A short description of HalfProgress.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/nur.ahmadullah/HalfProgress",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "nur.ahmadullah": "nur.ahmadullah@bjitgroup.com"
+  },
+  "source": {
+    "git": "https://github.com/nur.ahmadullah/HalfProgress.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "HalfProgress/Classes/**/*"
+}

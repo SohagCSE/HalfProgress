@@ -1,0 +1,16 @@
+PODS:
+  - HalfProgress (0.1.0)
+
+DEPENDENCIES:
+  - HalfProgress (from `../`)
+
+EXTERNAL SOURCES:
+  HalfProgress:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HalfProgress: 3993fc206f005a90d78ded64f4257a684eb693d9
+
+PODFILE CHECKSUM: e57d05b9431cde2bcf27dc6986090891e1ef926e
+
+COCOAPODS: 1.11.3
