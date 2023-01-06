@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HalfProgress'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'HalfProgress is a cocoapod library. It can be use for half progress or slider, tick progress and rating progress.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 'HalfProgress is a cocoapod library. It can be use for half progress or slider, tick progress and rating progress. just import and turn on the accessory'
                        DESC
 
-  s.homepage         = 'https://github.com/SohagCSE/HalfProgress'
+  s.homepage         = 'https://github.com/NurAhmadullah/HalfProgress'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nur.ahmadullah' => 'sohag.cse14.hstu@gmail.com' }
-  s.source           = { :git => 'https://github.com/SohagCSE/HalfProgress.git', :tag => s.version.to_s }
+  s.author           = { 'nur.ahmadullah' => 'nurhstucse@gmail.com' }
+  s.source           = { :git => 'https://github.com/NurAhmadullah/HalfProgress.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 #  s.social_media_url = 'https://www.linkedin.com/in/nur-ahmadullah'
 
