@@ -17,7 +17,6 @@ extension UIView{
         layer.mask = mask
     }
     
-    // gives the horizontal gradient-layer on background for any view (for example: uiview, uibutton, uilabel) [but, you can't update the gradient-layer later]
     public func applyHorizontalGradient(colors: [UIColor], cornerRadius: CGFloat? = nil) {
         
         let gradient = CAGradientLayer()
@@ -31,7 +30,6 @@ extension UIView{
         layer.insertSublayer(gradient, at: 0)
     }
     
-    // gives the vertical gradient-layer on background for any view (for example: uiview, uibutton, uilabel) [but, can't you update the gradient-layer later]
     public func applyVerticalGradient(colors: [UIColor], cornerRadius: CGFloat? = nil) {
         
         let gradient: CAGradientLayer = CAGradientLayer()
@@ -41,5 +39,26 @@ extension UIView{
             gradient.cornerRadius = radius
         }
         self.layer.insertSublayer(gradient, at: 0)
+    }
+}
+
+
+extension UIButton {
+    private func image(withColor color: UIColor) -> UIImage? {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+
+        context?.setFillColor(color.cgColor)
+        context?.fill(rect)
+
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+
+    func setBackgroundColor(withColor color: UIColor, for state: UIControl.State) {
+        self.setBackgroundImage(image(withColor: color), for: state)
     }
 }
