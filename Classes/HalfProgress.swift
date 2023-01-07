@@ -62,3 +62,30 @@ extension UIButton {
         self.setBackgroundImage(image(withColor: color), for: state)
     }
 }
+
+
+extension String {
+    //--- getting character by "str[i]"
+    subscript(idx: Int) -> String {
+        String(self[index(startIndex, offsetBy: idx)])
+    }
+    
+    //--- getting substring by "str[i..<j]"     //--- from 'i' to 'j' position
+    subscript(_ range: CountableRange<Int>) -> String {
+        let start = index(startIndex, offsetBy: max(0, range.lowerBound))
+        let end = index(start, offsetBy: min(self.count - range.lowerBound,
+                                             range.upperBound - range.lowerBound))
+        return String(self[start..<end])
+    }
+    
+    //--- getting substring by "str[i...]"      //--- from i'th position to end
+    subscript(_ range: CountablePartialRangeFrom<Int>) -> String {
+        let start = index(startIndex, offsetBy: max(0, range.lowerBound))
+        return String(self[start...])
+    }
+    
+    //--- getting substring by "str[...j]"      //--- from first to j'th position
+    subscript(range: PartialRangeThrough<Int>) -> SubSequence {
+        return self[...index(startIndex, offsetBy: range.upperBound)]
+    }
+}
