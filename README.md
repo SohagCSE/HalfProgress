@@ -20,9 +20,6 @@ it, simply add the following line to your Podfile:
 pod 'HalfProgress'
 ```
 
-## Author
-
-Nur Ahmadullah, sohag.cse14.hstu@gmail.com
 
 ## License
 
